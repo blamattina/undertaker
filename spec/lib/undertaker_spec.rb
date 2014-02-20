@@ -10,6 +10,23 @@ describe Undertaker, 'configuration' do
     expect(undertaker.instance_variable_get(:@limit)).to eq 1
     expect(undertaker.instance_variable_get(:@logger)).to eq "Logger"
   end
+
+  it 'allows configuration of the retry configuration' do
+    undertaker = Undertaker.new(limit: 2)
+    test_attempts = 0
+    undertaker.retry_when do |exception|
+      exception == NameError
+    end
+
+    expect do
+      undertaker.execute do
+        test_attempts += 1
+        raise RangeError
+      end
+    end.to raise_error(RangeError)
+
+    expect(test_attempts).to eq 1
+  end
 end
 
 describe Undertaker, '#execute' do
