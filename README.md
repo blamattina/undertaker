@@ -1,4 +1,8 @@
 # Undertaker
+[![Build
+Status](https://travis-ci.org/blamattina/undertaker.png?branch=master)](https://travis-ci.org/blamattina/undertaker)
+[![Gem
+Version](https://badge.fury.io/rb/undertaker-rails.png)](http://badge.fury.io/rb/undertaker-rails)
 
 Easy exponential back off.
 
@@ -17,7 +21,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install undertaker
+    $ gem install undertaker-rails
 
 ## Usage
 
