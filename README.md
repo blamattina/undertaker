@@ -1,6 +1,9 @@
 # Undertaker
 
-TODO: Write a gem description
+Easy exponential back off.
+
+Undertaker will run a block of code and if it raises an exception it will
+retry.
 
 ## Installation
 
@@ -18,7 +21,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Retry any StandardError
+
+```ruby
+undertaker = Undertaker.new(limit: 5, logger: Rails.logger)
+
+undertaker.execute do
+  something...
+end
+```
+
+### With a custom retry condition
+
+```ruby
+undertaker = Undertaker.new
+
+undertaker.retry_when { |exception| exception == SomeError }
+
+undertaker.execute do
+  something...
+end
+```
 
 ## Contributing
 
