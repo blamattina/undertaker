@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'undertaker/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "undertaker"
+  spec.name          = "undertaker-rails"
   spec.version       = Undertaker::VERSION
   spec.authors       = ["Brian LaMattina"]
   spec.email         = ["brianlamattina@gmail.com"]

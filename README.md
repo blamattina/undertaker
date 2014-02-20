@@ -9,7 +9,7 @@ retry.
 
 Add this line to your application's Gemfile:
 
-    gem 'undertaker'
+    gem 'undertaker-rails'
 
 And then execute:
 
