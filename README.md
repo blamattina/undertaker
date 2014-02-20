@@ -1,4 +1,8 @@
 # Undertaker
+[![Build
+Status](https://travis-ci.org/blamattina/undertaker.png?branch=master)](https://travis-ci.org/blamattina/undertaker)
+[![Gem
+Version](https://badge.fury.io/rb/undertaker-rails.png)](http://badge.fury.io/rb/undertaker-rails)
 
 Easy exponential back off.
 
@@ -9,7 +13,7 @@ retry.
 
 Add this line to your application's Gemfile:
 
-    gem 'undertaker-rails'
+    gem 'undertaker'
 
 And then execute:
 
