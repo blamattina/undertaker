@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Undertaker::VERSION
   spec.authors       = ["Brian LaMattina"]
   spec.email         = ["brianlamattina@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Easy exponential back off}
+  spec.description   = %q{Easy exponential back off}
+  spec.homepage      = "https://github.com/blamattina/undertaker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
